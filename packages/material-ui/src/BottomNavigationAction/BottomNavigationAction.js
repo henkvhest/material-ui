@@ -95,7 +95,7 @@ const BottomNavigationAction = React.forwardRef(function CircularProgress(props,
     });
 
     return (
-      <ButtonBase className={className} focusRipple onClick={handleChange} {...other}>
+      <ButtonBase className={className} focusRipple onClick={handleChange} ref={ref} {...other}>
         <span className={classes.wrapper}>
           {icon}
           <span className={labelClassName}>{label}</span>
